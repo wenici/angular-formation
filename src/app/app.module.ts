@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layouts/header/header.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -17,10 +16,13 @@ import { environment } from 'src/environments/environment';
 registerLocaleData(localeFr, 'fr');
 
 import { MaterialUiModule } from './material-ui/material-ui.module';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HeaderComponent } from './layouts/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
     HeaderComponent
   ],
   imports: [
